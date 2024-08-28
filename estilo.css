@@ -1,0 +1,50 @@
+/* Estilos generales */
+#divPrincipal {
+    background-color: blue; /* Fondo azul */
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: gold; /* Letras doradas */
+}
+body {
+    background-color: blue; /* Fondo azul */
+}
+
+/* Estilos para #divPregunta */
+#divPregunta {
+    width: 80%;
+    height: 50%;
+    border: 2px solid gold; /* Borde dorado */
+    border-radius: 10px; /* Bordes redondeados */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Espacio entre #divPregunta y #respuestas */
+    box-sizing: border-box; /* Incluye el borde en el tamaño total */
+}
+
+/* Estilos para #respuestas */
+#respuestas {
+    width: 80%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    grid-template-rows: 1fr 1fr; /* Dos filas */
+    gap: 10px; /* Espacio entre los divs */
+    /*border: 2px solid gold; /* Borde dorado */
+    border-radius: 10px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye el borde en el tamaño total */
+}
+
+/* Estilos para los divs dentro de #respuestas */
+#respuestas > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid gold; /* Borde dorado */
+    border-radius: 10px; /* Bordes redondeados */
+    color: gold; /* Letras doradas */
+}
